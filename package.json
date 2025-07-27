@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "Walmart Sales Analysis Dashboard",
   "main": "index.tsx",
+  "homepage": "https://mikewayne92.github.io/walmart_sales_analysis",
   "scripts": {
     "dev": "vite",
     "start": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "lodash": "^4.17.21",
@@ -19,6 +22,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.6.0",
     "autoprefixer": "^10.0.0",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.0.0",
     "tailwindcss": "^3.0.0",
     "typescript": "^5.0.0",
